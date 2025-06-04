@@ -199,8 +199,8 @@ services:
       dockerfile: Dockerfile
     container_name: flower_theater
     command: "celery -A scheduler.celery_app flower --address=0.0.0.0"
-    expose:
-      - 5555
+    ports:
+      - "5555:5555"
     env_file:
       - .env
     depends_on:
