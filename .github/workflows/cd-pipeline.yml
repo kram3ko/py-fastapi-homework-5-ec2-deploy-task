@@ -7,7 +7,6 @@ on:
       - completed
     branches:
       - develop
-      - main
 
 jobs:
   deploy:
