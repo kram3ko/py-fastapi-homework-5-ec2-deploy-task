@@ -3,12 +3,13 @@ name: CI Pipeline
 on:
   pull_request:
     branches:
-      - "main"
-      - "develop"
+      - develop
+      - main
   push:
     branches:
-      - "main"
-      - "develop"
+      - develop
+      - main
+
 
 jobs:
   test-accounts:
