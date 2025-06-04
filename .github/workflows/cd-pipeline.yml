@@ -8,7 +8,9 @@ on:
     branches:
       - develop
       - main
-
+  push:
+    branches:
+      - develop
 jobs:
   deploy:
     if: github.event.workflow_run.conclusion == 'success' && (github.event.workflow_run.head_branch == 'main' || github.event.workflow_run.head_branch == 'develop')
